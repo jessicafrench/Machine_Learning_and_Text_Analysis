@@ -17,10 +17,6 @@ setwd("/Users/jfrench/Documents/MEDS/eds-231/Lab1")
 
 ```{r label = "read in packages"}
 library(dotenv)
-library(jsonlite) #convert results from API queries into R-friendly formats 
-library(tidyverse)
-library(tidytext) #text data management and analysis
-library(ggplot2) #plot word frequencies and publication dates
 ```
 
 ```{r label = "set up API key"}
@@ -29,13 +25,5 @@ dotenv::load_dot_env("Lab1.env")
 
 # Assign the API key to a variable 
 api_key <- Sys.getenv("API_KEY")
-```
-
-## Query
-
-For this assignment I will look for articles about 
-
-```{r label = "query nyt API"}
-
 ```
 
