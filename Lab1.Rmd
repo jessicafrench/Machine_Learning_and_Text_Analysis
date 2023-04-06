@@ -1,0 +1,29 @@
+---
+title: "Lab1"
+author: "Jessica French"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+## Set Up
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r label = "set working directory"}
+setwd("/Users/jfrench/Documents/MEDS/eds-231/Lab1")
+```
+
+```{r label = "read in packages"}
+library(dotenv)
+```
+
+```{r label = "set up API key"}
+# Read in environment using the dotenv package
+dotenv::load_dot_env("Lab1.env")
+
+# Assign the API key to a variable 
+api_key <- Sys.getenv("API_KEY")
+```
+
